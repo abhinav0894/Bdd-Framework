@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="40.23">
+    <testcase classname="Scotia bank Login" name="Scotia bank Login Test with Wrong credentials" time="30.548">
+        <system-out><![CDATA[Given user is already on Login Page.........................................passed
+When title of login page is "Sign in | Scotiabank"..........................passed
+Then user enters "dsffrhgfwetrehfa#@" and "grehgdsgstgrgr"..................passed
+Then user clicks on login button............................................passed
+Then user get error for email...............................................passed
+Then user quit..............................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Scotia bank Login" name="facebook Login Test" time="9.342">
+        <failure message="Unable to locate element: //a[contains(text(),'Find your account and log in.')]&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: '4.20.0', revision: '866c76ca80'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [056fe46f-143a-48c9-8524-43d594610b13, findElement {value=//a[contains(text(),'Find your account and log in.')], using=xpath}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 129.0.1, moz:accessibilityChecks: false, moz:buildID: 20240812083845, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14480, moz:profile: C:\Users\12265\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}&#10;Session ID: 056fe46f-143a-48c9-8524-43d594610b13" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user is on Login Page.................................................passed
+When Title of login page is "Facebook - log in or sign up"..................passed
+Then User enters "sadghggfdsfgh" and "asdfghjhghfds"........................passed
+Then User get error for email...............................................failed
+Then User quit..............................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[contains(text(),'Find your account and log in.')]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [056fe46f-143a-48c9-8524-43d594610b13, findElement {value=//a[contains(text(),'Find your account and log in.')], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 129.0.1, moz:accessibilityChecks: false, moz:buildID: 20240812083845, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14480, moz:profile: C:\Users\12265\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 056fe46f-143a-48c9-8524-43d594610b13
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at pages.FacebookPage.readErr(FacebookPage.java:28)
+	at stepdefinations.FbStepDefination.user_get_error_for_email(FbStepDefination.java:34)
+	at ✽.User get error for email(file:///C:/QA/Selenium_WorkSpace/BDDFramework/src/test/java/features/Bdd.feature:37)
+]]></failure>
+    </testcase>
+</testsuite>
